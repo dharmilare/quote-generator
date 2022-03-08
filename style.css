@@ -107,7 +107,7 @@ button.loading{
     .wrapper{
         padding: 10px;
         flex: 0 0 100%;
-        width: 280px;
+        width: 350px;
         position: absolute;
         max-width: 100%;
     }

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(237, 178, 100);
+}
+.wrapper{
+    width: 550px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+}
+.wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wrapper .content{
+    width: 35px 0;
+}
+.content .quote-area{
+    display: flex;
+    justify-content: center;
+}
+.quote-area i{
+    font-size: 15px;
+}
+.quote-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px;
+}
+.quote-area .quote{
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+}
+.content .author{
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin: 20px 0 20px 0;
+    justify-content: flex-end;
+}
+.author span:first-child{
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+.wrapper .buttons{
+    border-top: 1px solid #ccc;
+}
+.buttons .features{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.features ul{
+    display: flex;
+}
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    cursor: pointer;
+    color: rgb(65, 188, 236);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(43, 144, 226);
+    transition: all 0.3s ease;
+}
+.features ul li:hover{
+    color: #fff;
+    background: rgb(65, 188, 236);
+}
+.features button{
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-style: 16px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: rgb(65, 188, 236);
+}
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
+@media(max-width:420px){
+    body{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .wrapper{
+        padding: 10px;
+        flex: 0 0 100%;
+        width: 280px;
+        position: absolute;
+        max-width: 100%;
+    }
+    .features button{
+        margin-right: 10px;
+    }
+}
